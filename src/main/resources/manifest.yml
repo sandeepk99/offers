@@ -1,0 +1,15 @@
+applications:
+- name: offers
+  memory: 1G
+  instances: 1
+  path: target/offers-0.0.1-SNAPSHOT.jar
+  random-route: true
+  services:
+  - service-registry
+  - circuit-breaker
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://eureka-fc919389-9031-4eb0-8e7f-91bc132aac57.cfapps.io
+
