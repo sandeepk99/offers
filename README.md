@@ -6,10 +6,10 @@ The Offers microservice calls IA microservice
 
 Technology stack used
  - Spring boot
- - circuit breaker - Hystrix (Fault tolorent)
+ - circuit breaker - Hystrix (Fault tolerance)
  - eureka (naming server) 
  - Feign (Rest Client)
  - Ribbon (Client side load balancer)
  - zuul (Api gateway)
  
- TBD : Config server , Zipkin , OAUTH 2.0 
+ TBD : Config server , Zipkin , OAUTH 2.0 , kafka integration
