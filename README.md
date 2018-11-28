@@ -2,10 +2,14 @@
 
 This microservice is developed using spring stack mention below , The service is configured to be deployed in pivotal cloud foundry
 
+The Offers microservice calls IA microservice
+
 Technology stack used
  - Spring boot
- - Hystrix (Fault tolernt )
- - eureka
- - Feign
- - Ribbon
- - zuul
+ - circuit breaker - Hystrix (Fault tolorent)
+ - eureka (naming server) 
+ - Feign (Rest Client)
+ - Ribbon (Client side load balancer)
+ - zuul (Api gateway)
+ 
+ TBD : Config server , Zipkin , OAUTH 2.0 
